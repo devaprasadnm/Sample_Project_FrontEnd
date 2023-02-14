@@ -6,8 +6,15 @@ class FormComponent extends Component {
         super(props);
         this.state = { 
             username:"",
-            password:""
+            password:"",
+            data:[]
          }
+    }
+
+    componentDidMount(){
+        fetch('https://jsonplaceholder.typicode.com/todos/')
+      .then(response => response.json())
+      .then(json => this.setState({data:json}))
     }
 
     UsernameHandler = (e) => {
@@ -25,9 +32,10 @@ class FormComponent extends Component {
   render() {
     return (
       <div>
-     <input placeholder="Username" onChange={this.UsernameHandler} />
+     <input placeholder="Username" value={this.state.username} onChange={this.UsernameHandler} />
         <input placeholder="Password" onChange={this.PasswordHandler} />
         <button>Submit</button>
+        <h3>{this.state.data.map((d) => (<p>{d.id} {d.title}</p> ))}</h3>
       </div>
     )
   }
