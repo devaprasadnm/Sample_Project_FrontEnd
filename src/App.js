@@ -9,7 +9,8 @@ import Example2 from './components/Example2';
 import FormComponent from './components/Form';
 import MyFragment from './components/MyFragment';
 import ComponentA from './components/ComponentA';
-
+import Counter from './components/Counter';
+import CounterHook from './components/CounterHook';
 export const MyContext = React.createContext();
 
 function App() {
@@ -19,14 +20,16 @@ function App() {
   }
   return (
     <div className="App">
+      <CounterHook/>
+      {/* <Counter/> */}
     {/* <Name/>
     <Example names={["Python","Java","Ruby"]} />
     <Example2 x = {["Rohith","Revanth"]}/> 
     <FormComponent/>*/}
-    <MyFragment/>
+    {/* <MyFragment/>
     <MyContext.Provider value="Hello world">
     <ComponentA/>
-    </MyContext.Provider>
+    </MyContext.Provider> */}
 
     </div>
   );
