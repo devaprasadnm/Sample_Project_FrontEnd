@@ -6,6 +6,7 @@ import Name from './components/Name';
 import Example from './components/Example';
 import Example2 from './components/Example2';
 import FormComponent from './components/Form';
+import MyFragment from './components/MyFragment';
 
 function App() {
 
@@ -16,8 +17,10 @@ function App() {
     <div className="App">
     {/* <Name/>
     <Example names={["Python","Java","Ruby"]} />
-    <Example2 x = {["Rohith","Revanth"]}/> */}
-    <FormComponent/>
+    <Example2 x = {["Rohith","Revanth"]}/> 
+    <FormComponent/>*/}
+    <MyFragment/>
+
     </div>
   );
 }
