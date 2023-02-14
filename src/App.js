@@ -12,6 +12,7 @@ import ComponentA from './components/ComponentA';
 import Counter from './components/Counter';
 import CounterHook from './components/CounterHook';
 import FetchData from './components/FetchData';
+import UseReducer from './components/UseReducer';
 export const MyContext = React.createContext();
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
     <MyContext.Provider value="Hello world">
     <ComponentA/>
     </MyContext.Provider>
+    <UseReducer/>
 
     </div>
   );
