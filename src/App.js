@@ -28,10 +28,10 @@ function App() {
     <Example names={["Python","Java","Ruby"]} />
     <Example2 x = {["Rohith","Revanth"]}/> 
     <FormComponent/>*/}
-    {/* <MyFragment/>
+    {/* <MyFragment/> */}
     <MyContext.Provider value="Hello world">
     <ComponentA/>
-    </MyContext.Provider> */}
+    </MyContext.Provider>
 
     </div>
   );
