@@ -11,6 +11,7 @@ import MyFragment from './components/MyFragment';
 import ComponentA from './components/ComponentA';
 import Counter from './components/Counter';
 import CounterHook from './components/CounterHook';
+import FetchData from './components/FetchData';
 export const MyContext = React.createContext();
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
   }
   return (
     <div className="App">
-      <CounterHook/>
+      <FetchData/>
+      {/* <CounterHook/> */}
       {/* <Counter/> */}
     {/* <Name/>
     <Example names={["Python","Java","Ruby"]} />
