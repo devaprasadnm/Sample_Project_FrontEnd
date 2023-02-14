@@ -5,6 +5,7 @@ import MyClass from './components/MyClass';
 import Name from './components/Name';
 import Example from './components/Example';
 import Example2 from './components/Example2';
+import FormComponent from './components/Form';
 
 function App() {
 
@@ -13,9 +14,10 @@ function App() {
   }
   return (
     <div className="App">
-    <Name/>
+    {/* <Name/>
     <Example names={["Python","Java","Ruby"]} />
-    <Example2 x = {["Rohith","Revanth"]}/>
+    <Example2 x = {["Rohith","Revanth"]}/> */}
+    <FormComponent/>
     </div>
   );
 }
